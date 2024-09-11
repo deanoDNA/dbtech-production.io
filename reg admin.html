@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register to get an Account</title>
+    <link rel="stylesheet" type="text/css" href="assets/Styles.css">
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="fontawsome/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="navbar">
+      <div class="navInfo">
+        <a href="">
+        <i class="fas fa-user"></i>
+        </a>
+      </div>
+        <div class="brand"><a href="admin.html"><i class="fas fa-user"></i></a></div>
+        <div class="toggle" onclick="toggleSidebar()">
+            <div class="toggle-bar"></div>
+            <div class="toggle-bar"></div>
+            <div class="toggle-bar"></div>
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Welcome to Our OBVA System</h1>
+      
+          <section class="home">
+            <div class="form-page">
+
+                <div class="myform">
+                    <form action="reg admin.php" method="post">
+                      <h1>Admins Register to get an Administrator Account</h1>
+                      <div class="row">
+                          <div class="input">
+                              <i class="fas fa-user"></i>
+                              <input type="text" name="first_name" placeholder="Enter firstname">
+                          </div>
+                          <div class="input">
+                              <i class="fas fa-user"></i>
+                              <input type="text" name="last_name" placeholder="Enter lastname">
+                          </div>
+                      </div>                    
+                      <div class="row">
+                          <div class="input">
+                              <i class="fas fa-lock"></i>
+                              <input type="password" name="password1" placeholder="Enter password">
+                          </div>
+                          <div class="input">
+                              <i class="fas fa-lock"></i>
+                              <input type="password" name="password2" placeholder="Enter confirm password">
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="input">
+                            <i class="fas fa-phone"></i>
+                            <input type="text" name="security_answer" placeholder="Enter Security answer">
+                        </div>
+                        <div class="input">
+                            <i class="fas fa-pen"></i>
+                            <input type="text" name="username" placeholder="Create a username">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input">
+                            <i class="fas fa-phone"></i>
+                            <input type="text" name="email" placeholder="Enter your email">
+                        </div>
+                        <!--  -->
+                    </div>
+                      <button>Register</button>
+                      <div class="other">
+                          <a href="admin.html">Click here to login as Administrator.</a><br>
+                          <a href="index.html">Click here to login as user.</a><br>
+                          <a href="#mechanic login.html">Click here to login as mechanic.</a>
+                      </div>
+                  </form>
+                  </div>
+
+            </div>
+            
+            
+          </section>
+
+
+          <footer>
+            <div class="text">
+              <span>Created By <a href="#">db Tech-production</a> | &#169; 2024 All Rights Reserved</span>
+            </div>
+            <div class="socialmedia">
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </footer>
+      
+          <script src="assets/js/script.js"></script>
+
+
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>

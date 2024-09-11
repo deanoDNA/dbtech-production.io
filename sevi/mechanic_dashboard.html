@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanic Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .notification-icon {
+            position: relative;
+            margin-right: 10px;
+        }
+        .notification-icon .badge {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 4px 6px;
+            font-size: 12px;
+        }
+        .notification-dropdown {
+            position: absolute;
+            top: 50px;
+            right: 10px;
+            z-index: 1000;
+            width: 300px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: none;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .notification-dropdown .dropdown-item {
+            padding: 10px;
+            cursor: pointer;
+        }
+        .notification-dropdown .dropdown-item:hover {
+            background-color: #f0f0f0;
+        }
+        .cards{
+        /* background: #7b6464; */
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 10px 0;
+        width: 100%;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+        padding-top: 1%;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card{        
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        /* margin-top: 20px; */
+        /* padding-top: 0.70%; */
+        /* height: 60%; */
+        margin-left: 9%;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .card:hover{
+            color: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Mechanic Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link notification-icon" href="mechanic_notifications.html" id="notificationIcon">
+                        Notifications <span id="notificationCount" class="badge badge-light">0</span>
+                    </a>
+                    <div class="notification-dropdown" id="notificationDropdown">
+                        <div class="dropdown-menu" aria-labelledby="notificationDropdown">
+                            <!-- Notifications will be dynamically added here -->
+                             <link rel="stylesheet" href="mechanic_notifications.html">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="cards">
+        <div class="card">
+            <h1>User Requests</h1>
+            <h2><a class="nav-link" href="http://localhost/obva%20system/sevi/mechanic_notifications.html">View user Requests Here</a></h2>
+
+        </div>
+        <div class="card">
+            <h1>User Monthly Report</h1>
+            <h2><a class="nav-link" href="http://localhost/obva%20system/report/admin_dashboard.php">View user Requests Here</a></h2>
+        </div>
+
+    </div>
+
+   
+</body>
+</html>

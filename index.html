@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to our system Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="nyotaa.css">
+    <link rel="stylesheet" href="nyota.css">
+    <!-- <link rel="stylesheet" href="search/styles.css"> -->
+    <link rel="stylesheet" href="searchstyles.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .dashboard {
+            width: 80%;
+            max-width: 1200px;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .card-text {
+            font-size: 1em;
+            color: #555;
+        }
+        .first-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .mechanic-info {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+    <div class="navbar">
+      <div class="navInfo">
+        <a href="">
+        <i class="fas fa-user"></i>
+        </a>
+      </div>
+      <div class="sach">
+        <div class="search-bar">
+          <!-- <form method="POST" action="search.php">
+              <input type="text" name="search_query" placeholder="Search mechanics..." required>
+              <button type="submit">Search</button>
+          </form> -->
+      </div>
+      </div>
+    <ul class="nav-links">
+        <li><a href="login.html">Response Notification</a></li>
+        <li><a href="login.html">Profile</a></li>
+        <!-- <li><a href="logout.php">Logout</a></li> -->
+    </ul>
+        <div class="brand"><a href="index.php"><i class="fas fa-user"></i></a></div>
+        <div class="toggle" onclick="toggleSidebar()">
+            <div class="toggle-bar"></div>
+            <div class="toggle-bar"></div>
+            <div class="toggle-bar"></div>
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="login.html">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+    
+    
+<body>
+  <div class="body">
+  <h1>Our Services</h1>
+    <!-- First card section -->
+    <div class="first-card">
+        <div class="card">
+            <img src="carimage/engineWarning2.jpg" alt="Service 1">
+            <div class="card-content">
+                <h2 class="card-title">To get our service you have to accept our terms inludes:</h2>
+                <div class="mechanic-info">
+                    <h3>You have to pay the Mechanic when Arrived regardless the kind of the Breakdown</h3>
+                    <br>
+                    <h2>The price for the quick, Mechanic will be paid </h2>
+                    <br>
+                    <h2>20,000/= Tzs</h2>
+                 </div>
+                 <BR>
+                
+                <h2 class="card-text">
+                    FILL THE FORM FOR QUICK SERVICE.
+                </h2>
+                <button><a href="login.html">Request Service Here</a></button>
+                </div>
+        </div>    </div>
+
+    <!-- Services dashboard -->
+    <div class="dashboard">
+        <div class="card">
+            <img src="carimage/carTOWING.jpeg" alt="Service 1">
+            <div class="card-content">
+                <h2 class="card-title">Car Towing Services</h2>
+                <p class="card-text">
+                    Get car Towing service for you on-road broken car.
+                </p>
+                <br>
+                <div class="mechanic-info">
+                <!-- <button><a href="login.html">Towing Service</a></button> -->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="carimage/fuelDelive.jpeg" alt="Service 2">
+            <div class="card-content">
+                <h2 class="card-title">Fuel Delivery</h2>
+                <p class="card-text">
+                    We deliver the Fuel to your vehicle includes both Petrol, Diesel and oil change to your brokendown area.
+                </p>
+                <div class="mechanic-info">
+                <!-- <button><a href="login.html">Fuel Delivery</a></button> -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add more cards here -->
+        <div class="card">
+            <img src="carimage/electricChargeDeriver.jpg" alt="Service 3">
+            <div class="card-content">
+                <h2 class="card-title">ROAD-SIDE ELECTRIC CHARGE</h2>
+                <p class="card-text">
+                    This service is offerd for the vehicles that use Electric as the source of power
+                </p>
+                <div class="mechanic-info">
+                <!-- <button><a href="login.html">Car electric charge</a></button> -->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="carimage/tyreChange.jpg" alt="Service 4">
+            <div class="card-content">
+                <h2 class="card-title">TYRE CHANGE SERVICE</h2>
+                <p class="card-text">
+                    This service offer the tyre change service, new ones, to the field of brocken tyre in the roed side
+                </p>
+                <div class="mechanic-info">
+                <!-- <button><a href="login.html">Tyre change</a></button> -->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="carimage/oilChange.jpg" alt="Service 3">
+            <div class="card-content">
+                <h2 class="card-title">OIL CHANGE SERVICE</h2>
+                <p class="card-text">
+                    We offer the oil change service to the roadside brocken vehicle.
+                </p>
+                <div class="mechanic-info">
+                <!-- <button><a href="login.html">Oil change</a></button> -->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="carimage/carWORKshop.jpeg" alt="Service 4">
+            <div class="card-content">
+                <h2 class="card-title">CAR MANTAINANCE WORKSHOP</h2>
+                <p class="card-text">
+                    This is the bgerege for the vehicle that delivered for the further mantainance.
+                </p>
+                <div class="mechanic-info">
+                <!-- <button><a href="login.html">Car gerege</a></button> -->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="carimage/gear.jpg" alt="Service 4">
+            <div class="card-content">
+                <h2 class="card-title">GEAR BOX MANTAINANCE</h2>
+                <p class="card-text">
+                    THis provide the gear box system mantainance, our mechanics make the whole service for the short time.
+                </p>
+                <div class="mechanic-info">
+                <!-- <button><a href="login.html">Gear-box mantainance</a></button> -->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="carimage/wiring.jpg" alt="Wiring">
+            <div class="card-content">
+                <h2 class="card-title">WIRING SERVICE</h2>
+                <p class="card-text">
+                    We provide the car wiring service to the wiring system that brocken.
+                </p>
+                <div class="mechanic-info">
+                <!-- <button><a href="login.html">Wiring service</a></button> -->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="carimage/air condition.jpg" alt="air condition">
+            <div class="card-content">
+                <h2 class="card-title">AC MANTAINANCE</h2>
+                <p class="card-text">
+                    We provide the car air conditional service mantainance to every where your
+                </p>
+                <div class="mechanic-info">
+                <!-- <button><a href="login.html">AC mantainance</a></button> -->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="carimage/electricalSystem.jpg" alt="air condition">
+            <div class="card-content">
+                <h2 class="card-title">CAR ELECTRIC MANTAINANCE</h2>
+                <p class="card-text">
+                    we are providing a car electric service mantainance, to make your car being better than you expect
+                </p>
+                <div class="mechanic-info">
+                <!-- <button><a href="login.html">Electric mantainance</a></button> -->
+                </div>
+            </div>
+        </div>
+  </div>
+   
+        
+    </div>
+
+
+
+          <footer>
+            <div class="text">
+              <span>Created By <a href="#">db Tech-production</a> | &#169; 2024 All Rights Reserved</span>
+            </div>
+            <div class="socialmedia">
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </footer>
+      
+          <script src="js/script.js"></script>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

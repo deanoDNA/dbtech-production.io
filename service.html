@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request your service</title>
+    <link rel="stylesheet" type="text/css" href="assets/Styles.css">
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="fontawsome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=.0">
+</head>
+<body>
+    <div class="navbar">
+      <div class="navInfo">
+        <a href="">
+        <i class="fas fa-user"></i>
+        </a>
+      </div>
+        <div class="brand"><a href="login/index.html"><i class="fas fa-user"></i></a></div>
+        <div class="toggle" onclick="toggleSidebar()">
+            <div class="toggle-bar"></div>
+            <div class="toggle-bar"></div>
+            <div class="toggle-bar"></div>
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>Welcome to Our OBVA System</h1>
+      
+          <section class="home">
+            <div class="form-page">
+               
+                <div class="container">
+                    <h2>Vehicle Breakdown Assistance Finder Form</h2>
+                    <form id="requestForm">
+                        <label for="serviceType">Select Service:</label>
+                        <select id="serviceType" name="serviceType" required>
+                            <option value="towing">Towing</option>
+                            <option value="tireChange">Tire Change</option>
+                            <option value="fuelDelivery">Fuel Delivery</option>
+                            <option value="oilChange">Oil Changing</option>
+                            <option value="instantHelp">Instant Help</option>
+                        </select><br>
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" name="location" required><br>
+                        <label for="contact">Enter your Username:</label>
+                        <input type="text" id="username" name="username" required><br>
+                        <label for="contact">Contact:</label>
+                        <input type="text" id="contact" name="contact" required><br>
+                        <button type="submit">Request Assistance</button>
+                    </form>
+                    <div id="confirmation" style="display: none;">
+                        <p>Request submitted successfully.</p>
+                        <p>Your reference number is: <span id="referenceNumber"></span></p>
+                    </div>
+                </div>
+                <script src="script.js"></script>
+
+            </div>
+            
+          </section>
+
+
+          <footer>
+            <div class="text">
+              <span>Created By <a href="#">db Tech-production</a> | &#169; 2024 All Rights Reserved</span>
+            </div>
+            <div class="socialmedia">
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+          </footer>
+      
+          <script src="assets/js/script.js"></script>
+
+
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+</html>
